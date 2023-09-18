@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Slab:wght@700&display=swap');
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+}
+
+body {
+    text-align: center;
+    margin: 0px;
+}
+
+header, footer {
+    background-color: lightskyblue;
+}
+
+#card, h3 {
+    background-color: lightskyblue;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 5%;
+    margin: 0px;
+
+}
+
+img {
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: 0 45%;
+    padding-top: 2%;
+    
+}
+.nav a {
+    background-color: black; /* Grey background color */
+    color: white; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+h1, h2, h3, footer {
+    font-family: 'Roboto Slab', serif;
+    padding: 10px;
+}
+
+ a {
+    font-family: 'PT Serif', serif;
+}
+
+.sign p {
+    display: block;
+    padding: 5px;
+}
