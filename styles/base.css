@@ -47,11 +47,100 @@ h1, h2, h3, footer {
     padding: 10px;
 }
 
- a {
+a {
     font-family: 'PT Serif', serif;
 }
 
 .sign p {
     display: block;
     padding: 5px;
+}
+
+/* small navigation */
+#menu {
+    font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top:1rem;
+	right:1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.nav {
+    display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.nav li {
+	display: none;
+}
+
+.nav li a {
+    display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav li a:hover {
+    background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+.open li a {
+    display: block;
+}
+
+
+
+@media (min-width: 37.5em) {
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.nav {
+		flex-direction: row;
+	}
+
+	.nav a {
+		display: block;
+		flex: 1 1 100%;
+	}
+	
+	/* .stuff {
+		margin: 1rem auto;
+	} */
+}
+.active::before {
+	content:"x";
 }
