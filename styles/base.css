@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@900&display=swap');
+
+body {
+    text-align: center;
+    margin: 0px;    
+}
+
+img, main {
+    
+    display: block;
+    margin-left: 25%;
+    margin-right: auto;
+    width: 20%;
+    padding-top: 20px;
+
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    left: 90px;
+    
+}
+
+
+header, h3, footer, h2 {
+    background-color: rgb(33, 86, 166);
+    color: white;
+    display: block;
+    
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border: rgb(28, 27, 27) solid 2px;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr auto auto auto;
+    text-align: center;
+}
+
+main h2 {
+    text-align: center;
+}
