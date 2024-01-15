@@ -67,3 +67,7 @@ header h1, main h2, .card h3 {
 nav a, ol li, footer p, .card p {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
+
+li {
+    text-align: left;
+}
