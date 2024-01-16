@@ -1,3 +1,5 @@
+/* small screen */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@900&display=swap');
 
 body {
@@ -16,10 +18,10 @@ img {
 
 header h1 {
     position: absolute;
-    top: 2%;
+    top: 0.4%;
     bottom: 100px;
     left: 37%;
-    font-size: 3em; 
+    font-size: 2em; 
     
 }
 
@@ -40,7 +42,8 @@ nav a {
     font-size: 20px;
     text-decoration: none;
     color: white;
-    border: rgb(28, 27, 27) solid 2px;
+    /* border: rgb(28, 27, 27) solid 2px; */
+    
 }
 
 main {
@@ -70,4 +73,9 @@ nav a, ol li, footer p, .card p {
 
 li {
     text-align: left;
+}
+
+nav:hover {
+    text-decoration: overline;
+    border: white solid 1px;
 }
