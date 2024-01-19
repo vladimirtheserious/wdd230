@@ -105,3 +105,32 @@ h2 {
 p {
 	padding: 10px;
 }
+
+/* medium screen */
+
+@media screen and (min-width: 600px) {
+	main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+		
+	
+    }
+
+
+
+	
+}
+ /* big screen */
+@media screen and (min-width: 900px) {
+	main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;   
+    }
+
+	section {
+        margin-right: 1em;
+        margin-left: 1em;
+        
+    }
+
+}
