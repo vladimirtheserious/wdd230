@@ -1,7 +1,7 @@
 /* large screen */
 
 @media screen and (min-width: 640px) {
-    nav {
+    .nav {
         display: flex;
         justify-content: space-around;
         background-color: black;
@@ -53,4 +53,23 @@
         text-align: center;
     }
 
+    #menu {
+        display: none;
+    }
+
+    iframe {
+        display: block;
+        width: 97%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
 }
