@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@500&display=swap');
+
+* body {
+    margin: 0;
+}
+
+section h1 {
+    text-align: left;
+    display: block;
+    padding-left: 2%;
+}
+
+section {
+    margin: 10px 0;
+    
+}
+
+main section {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+
+header, footer, section {
+    background-color: rgb(33, 86, 166);
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.main-photo {
+    display: block;
+    width: 14%;
+    margin-right: auto;
+    padding-bottom: 1em;
+    padding-top: 1em;
+
+}
+
+.hero-image {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#join {
+    position: relative;
+    bottom: 200px;
+    left: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(72, 128, 212);
+    color: white;
+
+
+}
+
+header h1 {
+    position: absolute;
+    top: 0.4%;
+    /* bottom: 100px; */
+    left: 18%;
+    font-size: 30px;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    background-color: rgb(72, 128, 212);
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    /* border: rgb(28, 27, 27) solid 2px; */
+    
+}
+
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+#menu {
+
+    font-size: 1.5rem;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+	content: "✕";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: whitesmoke;
+    color: black;
+    font-size: 16px;
+
+
+}
+
+.open a {
+    display: block;
+}
+
+iframe {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#menu.open iframe {
+    display: none;
+}
+
+footer p {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}

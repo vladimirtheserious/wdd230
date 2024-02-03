@@ -1,0 +1,51 @@
+@media screen and (min-width: 640px){
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(72, 128, 212);
+    }
+
+    header h1 {
+        position: absolute;
+        left: 28%;
+        font-size: 50px;
+    }
+
+    main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr auto;
+        
+    }
+
+    .main-photo {
+        display: block;
+        width: 7%;
+        margin-left: 10%;
+        margin-right: auto;
+        padding-bottom: 1em;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+    #join {
+        position: relative;
+        bottom: 280px;
+        left: 100px;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgb(72, 128, 212);
+        color: white;
+    
+    }
+}
