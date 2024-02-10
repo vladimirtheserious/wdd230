@@ -48,4 +48,11 @@
         color: white;
     
     }
+
+    #events h2, #weather h2 {
+        grid-column: 1/5;
+        padding: 10px;
+    }
+
+
 }
