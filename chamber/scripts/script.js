@@ -43,7 +43,6 @@ function myFunction() {
         main.style.background = "#000";
 		main.style.color = "#fff";
 
-
     } else {
         main.style.background = "#eee";
 		main.style.color = "#000";
