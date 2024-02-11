@@ -20,5 +20,32 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
+const header = document.querySelector('header');
+const modeButton = document.querySelector('.slider');
+const main = document.querySelector('body');
 
 
+// modeButton.addEventListener('click', () => {
+//     if (modeButton.textContent.includes("🌙")) {
+//         main.style.background = "#000";
+// 		main.style.color = "#fff";
+// 		modeButton.textContent = '🌞';
+//     } else {
+//         main.style.background = "#eee";
+// 		main.style.color = "#000";
+// 		modeButton.textContent = "🌙";
+//     }
+// });
+
+function myFunction() {
+    const checkBox = document.querySelector('#myCheck');
+    if (checkBox.checked == true) {
+        main.style.background = "#000";
+		main.style.color = "#fff";
+
+
+    } else {
+        main.style.background = "#eee";
+		main.style.color = "#000";
+    }
+}
