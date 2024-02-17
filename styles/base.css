@@ -7,7 +7,7 @@ body {
     margin: 0px;  
 }
 
-img {
+.face {
     
     display: block;
     width: 10%;
@@ -137,3 +137,14 @@ iframe {
     width: 100%;
     height: auto;
 }
+
+.hero h1 {
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    left: 40px;
+    top: 150px;
+    background-color: whitesmoke;
+    padding: 5px;
+}
+
