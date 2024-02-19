@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <img class="main-photo" src="../images/mainphoto.jpg" alt="">
+        <img class="main-photo" src="../images/mainphoto.webp" alt="">
         <h1>Bilston Chamber of Commerce</h1>
         <label class="switch">
             <input type="checkbox" id="myCheck" onclick="myFunction()">
@@ -38,7 +38,14 @@
             
     </header>
     <main>
-        <img src="images/bilston-chamber-main-picture.jpg" alt="" class="hero-image">
+        <div class="hero">
+            <picture>
+                <source srcset="images/small.webp" media="(max-width: 768px)">
+                <source srcset="images/medium.webp" media="(max-width: 1224px)">
+                <img src="images/large.webp" alt="thingi" width="1280px" height="388px">
+            </picture>
+        </div>
+        <!-- <img src="images/bilston-chamber-main-picture.jpg" alt="" class="hero-image"> -->
         <button id="join">Join the Chamber</button>
         
         <section id="events">
@@ -50,12 +57,12 @@
             </p>
         </section>
         <section id="weather">
-            <h2>Weather</h2>
-            <p>6*C</p>
-            <p><strong>Party Cloudy</strong></p>
-            <p>Humidity: 35%</p>
-            <p>Wind Child: N/A</p>
-            <p>United Kingdom, Bilston</p>
+            <label>Temperature:</label>
+            <input class="temperature" type="text">
+            <label>Wind speed:</label>
+            <input class="wind-speed" type="text">
+            <button class="wind-btn">Submit</button>
+            <span id="windChill"></span>
         </section>
         <section id="spotlights">
             <div class="firts">

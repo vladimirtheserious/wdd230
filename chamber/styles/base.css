@@ -212,3 +212,8 @@ input:checked + .slider {
   .slider.round:before {
     border-radius: 50%;
   }
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
