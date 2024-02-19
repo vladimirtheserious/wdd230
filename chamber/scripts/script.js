@@ -23,6 +23,8 @@ hamButton.addEventListener('click', () => {
 const header = document.querySelector('header');
 const modeButton = document.querySelector('.slider');
 const main = document.querySelector('body');
+const footer = document.querySelector('footer');
+const divs = document.querySelector('div h2');
 
 
 // modeButton.addEventListener('click', () => {
@@ -42,9 +44,16 @@ function myFunction() {
     if (checkBox.checked == true) {
         main.style.background = "#000";
 		main.style.color = "#fff";
+        header.style.background = "#666"
+        footer.style.background = '#666'
+
 
     } else {
         main.style.background = "#eee";
 		main.style.color = "#000";
+        header.style.background = "rgb(33, 86, 166)"
+        footer.style.background = "rgb(33, 86, 166)"
+
+        
     }
 }
