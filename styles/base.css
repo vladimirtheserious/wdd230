@@ -79,11 +79,11 @@ nav a:hover {
 
 #menu {
 
-    font-size: 1.5rem;
+    font-size: 24px;
     color: #000;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 16px;
+    right: 16px;
 }
 
 #menu::before {
@@ -103,7 +103,7 @@ nav a:hover {
 
 .navigation a {
     display: none;
-    padding: 1rem;
+    padding: 16px;
     text-align: center;
     text-decoration: none;
     color: #fff;
@@ -112,7 +112,7 @@ nav a:hover {
 .navigation a:hover {
     background-color: whitesmoke;
     color: black;
-    font-weight: 1rem;
+    font-weight: 16px;
 
 
 }
