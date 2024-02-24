@@ -66,5 +66,31 @@
         transition: .4s;
     }
 
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
 
-}
+    .events {
+        grid-row: 1/3;
+    }
+
+    .main-img {
+        grid-column: 2/4;
+    }
+
+    
+
+    .events p {
+        display: block;
+        padding: 10px;
+
+    }
+
+    .hover:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+
+} 

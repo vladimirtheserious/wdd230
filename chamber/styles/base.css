@@ -217,3 +217,33 @@ input:checked + .slider {
     width: 100%;
     height: auto;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.main-img h2 {
+    background-color: #2196F3;
+    color: white;
+    font-size:16px;
+}
+
+.events h1 {
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.events h2 {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px; 
+}
+
+span {
+    background-color: #2196F3;
+    color: white;
+}

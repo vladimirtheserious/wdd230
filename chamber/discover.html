@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlad Sychugov - WDD 230 - Chamber of Commerce</title>
+    <meta name="author" content="Vladimir Sychugov" />
+    <meta name="description" content="Web-page for personal Chember project">
+    <meta property = "og:title" content="Chember personal's project web-page">
+    <meta property = "og:type" content="website">
+    <meta property = "og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/c4/Bilston_Road%2C_Wolverhampton_-_geograph.org.uk_-_39387.jpg">
+    <meta property = "og:url" content="https://vladimirtheserious.github.io/wdd230/">
+
+    <link rel="favicon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+
+</head>
+<body>
+    <header>
+        <img class="main-photo" src="../images/mainphoto.webp" alt="">
+        <h1>Bilston Chamber of Commerce</h1>
+        <label class="switch">
+            <input type="checkbox" id="myCheck" onclick="myFunction()">
+            <span class="slider round"></span>
+        </label>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="">Discovery</a>
+            <a href="">Directory</a>
+            <a href="">Join</a>
+        </nav>
+            
+    </header>
+    <main>
+
+    <div class="container">
+
+        <div class="main-img">
+                <h2>Bilston Market</h2>
+                <img class="hover" src="images/bilston-market.webp" alt="" loading="lazy" width="250" height="200">
+                <h2>Mecca Bingo</h2>
+                <img class="hover" src="images/mecca-bingo.webp" alt="" loading="lazy" width="300" height="300">
+                <h2>Saint Leonard Church</h2>
+                <img class="hover" src="images/Saint-church.webp" alt="" loading="lazy" width="200" height="300">
+                <h2>Bilston Craft Galery</h2>
+                <img class="hover" src="images/bilston-craft-gallery.webp" alt="" loading="lazy" width="300" height="300">
+                <h2>The Trumpet </h2>
+                <img class="hover" src="images/the_trumpet.webp" alt="" loading="lazy" width="300" height="300">
+                <h2>The robin 2</h2>
+                <img class="hover" src="images/the_robin_2.webp" alt="" loading="lazy" width="200" height="300">
+        </div>
+
+       <div class="events">
+        <h1>Events</h1>
+        <h2>
+            Conferences
+        </h2>
+        <p>events@discover.com</p>
+        <p>076879078</p>        
+        <h2>
+            Meetings
+        </h2>
+        <p>events@discover.com</p>
+        <p>076879078</p>  
+        <h2>
+            Christmas Parties
+        </h2>
+        <p>events@discover.com</p>
+        <p>076879078</p> 
+
+        <span class="visits"></span>
+        <span class="last-visit"></span>
+       </div> 
+
+    </div>
+    </main>
+    <footer>
+        <p>
+            © <span class="year"></span> <br> Vlad Sychugov<br> The United Kingdom
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+<script src="scripts/script.js"></script> 
+<script src="scripts/windchill.js"></script> 
+<script src="scripts/visits.js"></script>
+</body>
+</html>
