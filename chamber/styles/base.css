@@ -227,6 +227,7 @@ input:checked + .slider {
 .main-img h2 {
     background-color: #2196F3;
     color: white;
+    padding: 10px; 
 }
 
 
@@ -240,5 +241,7 @@ input:checked + .slider {
 span {
     background-color: #2196F3;
     color: white;
+    padding: 10px; 
+
 
 }
