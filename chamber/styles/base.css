@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@500&display=swap');
 
+
+:root {
+    --font-size: 1.5rem;
+    --primary-color: rgb(33, 86, 166);
+    --second-color: red;
+}
+
+
 * body {
     margin: 0;
 }
@@ -238,10 +246,45 @@ input:checked + .slider {
 
 }
 
+section label input[type="text"],
+section label input[type="email"],
+section label input[type="tel"],
+section label input[type="hidden"],
+#description {
+    display: block;
+    padding: 5px;
+    border-radius: 4px; 
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+input:required {
+    border-bottom: solid 8px var(--primary-color);
+}
+
+input:required:valid {
+    border-bottom: solid 8px green;
+}
+
 span {
     background-color: #2196F3;
     color: white;
     padding: 10px; 
 
 
+}
+
+main label {
+    display: block;
+    padding-top: 30px;
+    color: black;
+    font-size: var(--font-size);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+    margin: 0px 125px ;
 }

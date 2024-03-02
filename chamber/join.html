@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlad Sychugov - WDD 230 - Chamber of Commerce</title>
+    <meta name="author" content="Vladimir Sychugov" />
+    <meta name="description" content="Web-page for personal Chember project">
+    <meta property = "og:title" content="Chember personal's project web-page">
+    <meta property = "og:type" content="website">
+    <meta property = "og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/c4/Bilston_Road%2C_Wolverhampton_-_geograph.org.uk_-_39387.jpg">
+    <meta property = "og:url" content="https://vladimirtheserious.github.io/wdd230/">
+
+    <link rel="favicon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+
+    
+
+</head>
+<body>
+    <header>
+        <img class="main-photo" src="../images/mainphoto.webp" alt="">
+        <h1>Bilston Chamber of Commerce</h1>
+        <label class="switch">
+            <input type="checkbox" id="myCheck" onclick="myFunction()">
+            <span class="slider round"></span>
+        </label>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="">Discovery</a>
+            <a href="">Directory</a>
+            <a href="">Join</a>
+        </nav>
+            
+    </header>
+    <main>
+        <div class="form">
+        <section>
+            <form method="get" action="thankyou.html" class=""></form>
+            <label>First name* <input type="text" id="fname" name="fname" placeholder="" required></label>
+            <label>Last name* <input type="text" id="lname" name="lname" placeholder="" required></label>
+            <label>Title or position* <input type="text" id="title" name="title" placeholder="Use letters, hyphens, and spaces (minimum 7 characters)" required pattern="[a-zA-Z -]{7,}"></label>
+            <label>Email adress <input type="email" required id="title" name="eadress" itemid="eadress" placeholder="example@gmail.com" required pattern="[a-zA-Z -]{7,}"></label>
+            <label>Mobile phone number <input type="tel" required name="phone" id="phone"></label>
+            <label>Business/organization's name <input type="text" required name="bname" id="bname"></label>
+            <div>Membership level</div>
+            <label class="radio"><input type="radio" name="membership" value="np"> NP Membership</label>
+            <label class="radio"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+            <label class="radio"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+            <label class="radio"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+            <label class="top">Business/organization's description<textarea id="description" name="description"></textarea></label>
+            <input type="hidden" value="" name="datetime" id="datetime">
+            <button type="submit" class="submitBtn">Join the Chamber</button>   
+        </section>
+
+        <section class="memberships">
+            <h2>Membership levels</h2>
+            <div class="benefits-container">
+                <div class="memberships-card">
+                    <h3>NP Membership</h3>
+                    <ul>
+                        <li>Ideal for non-profit organizations</li>
+                        <li>No membership fee</li>
+                        <li>Access to community resources</li>
+                    </ul>
+                    <p class="price">Free</p>
+                </div>
+                <div class="memberships-card">
+                    <h3>Bronze Membership</h3>
+                    <ul>
+                        <li>Affordable membership fee</li>
+                        <li>10% event discounts</li>
+                        <li>Networking opportunities</li>
+                    </ul>
+                    <p class="price">$50/year</p>
+                </div>
+                <div class="memberships-card">
+                    <h3>Silver Membership</h3>
+                    <ul>
+                        <li>Enhanced event discounts (15%)</li>
+                        <li>Featured advertising slots</li>
+                        <li>Exclusive training sessions</li>
+                    </ul>
+                    <p class="price">$100/year</p>
+                </div>
+                <div class="memberships-card">
+                    <h3>Gold Membership</h3>
+                    <ul>
+                        <li>Premium event discounts (20%)</li>
+                        <li>Prime advertising placement</li>
+                        <li>VIP access to special events</li>
+                    </ul>
+                    <p class="price">$200/year</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    </main>
+    <footer>
+        <p>
+            © <span class="year"></span> <br> Vlad Sychugov<br> The United Kingdom
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+<script src="scripts/script.js"></script> 
+<script src="scripts/windchill.js"></script> 
+</body>
+</html>
