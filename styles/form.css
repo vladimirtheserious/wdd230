@@ -100,7 +100,7 @@ input::placeholder {
 }
 
 #formmessage {
-	visibility: none;
+	/* visibility: none; */
 	margin: 10px;
 	padding: 0.5rem;
 	color: var(--second-color);
