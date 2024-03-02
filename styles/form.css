@@ -1,7 +1,7 @@
 :root {
     --font-size: 1.5rem;
-    --primary-color: ;
-    --second-color: 
+    --primary-color: rgb(33, 86, 166);
+    --second-color: red;
 }
 main{
     margin: 0px 125px;
@@ -40,7 +40,7 @@ main label {
 }
 
 .wf1 input:required {
-    border-bottom: solid 8px rgb(33, 86, 166);
+    border-bottom: solid 8px var(--primary-color);
 }
 
 .wf1 input:required:valid {
@@ -70,7 +70,7 @@ header h1 {
 }
 
 header, footer {
-    background-color: rgb(33, 86, 166);
+    background-color: var(--primary-color);
     color: white;
     display: block;
     padding: 20px;
@@ -81,8 +81,9 @@ header, footer {
     font-size: 20px;
     padding: 10px;
     text-align: center;
-    border: 5px solid rgb(33, 86, 166);
+    border: 5px solid var(--primary-color);
     border-radius: 6px;
+    max-width: 400px;
 }
 
 footer {
@@ -102,7 +103,7 @@ input::placeholder {
 	visibility: none;
 	margin: 10px;
 	padding: 0.5rem;
-	color: red;
+	color: var(--second-color);
 }
 
 nav a {
