@@ -3,13 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Vlad Sychugov - WDD 230 - Web Frontend HTML Form</title>
+    <meta name="author" content="Vladimir Sychugov" />
+    <meta name="description" content="Web-page with forms WDD230">
+    <meta property="og:title" content="Personal web-page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/c4/Bilston_Road%2C_Wolverhampton_-_geograph.org.uk_-_39387.jpg">
+    <meta property="og:url" content="https://vladimirtheserious.github.io/wdd230/">
+
+
+    <link rel="stylesheet" href="styles/normalize.css"> 
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <header></header>
+    <header>
+        <header>
+            <img class="face" src="images/mainphoto.jpg" alt="">
+            <h1>Vlad Sychugov</h1>
+        </header>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="https://vladimirtheserious.github.io/wdd230/lesson03/chamber-site-plan.html">Site Plan</a>
+            <a href="chamber/index.html">Chamber</a>
+            <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+        </nav>
+    </header>
     <main>
         
+        <h2>Form Build</h2>
+        <form method="get" action="record.html" class="wf1">
+        <label for="">Username <input type="text" id="username" name="username" required></label>
+        <label for="">Password <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" ></label>
+        <label for="">Password repeated for confirmation <input type="password" id="password_repeat" name="password_repeat" required></label>
+        <label for="">Email <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="A valid byui.edu email address."></label>
+        <label for="">Page Rating</label>
+        <div id="rangevalue">1</div> 
+        <input type="range" id="range" name="range" min="1" max="10" step="1" list="rangevalues">
+        <datalist id="rangevalues">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </datalist>
+        <input type="submit" value="Register" class="submitB">
+    </form>
     </main>
-    <footer></footer>
+    <footer>
+        <footer>
+            <p>
+                © <span class="year"></span> <br> Vlad Sychugov<br> The United Kingdom
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </footer>
+    <script src="scripts/getdates.js"></script> 
+    <script src="scripts/password.js"></script>
 </body>
 </html>

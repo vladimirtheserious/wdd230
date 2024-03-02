@@ -1,0 +1,215 @@
+:root {
+    --font-size: 1.5rem;
+    --primary-color: ;
+    --second-color: 
+}
+main{
+    margin: 0px 125px;
+}
+
+main label {
+    display: block;
+    padding-top: 30px;
+    color: black;
+    font-size: var(--font-size);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#range, .submitB {
+    padding: 20px;
+
+}
+
+.submitB{
+    margin-bottom: 20px;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="password"],
+.wf1 input[type="email"],
+.wf1 input[type="submit"]{
+    display: block;
+    padding: 5px;
+    border-radius: 4px; 
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+
+}
+
+.wf1 input:required {
+    border-bottom: solid 8px rgb(33, 86, 166);
+}
+
+.wf1 input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+body {
+    /* text-align: center; */
+    margin: 5px;  
+}
+
+.face {
+    
+    display: block;
+    width: 10%;
+    margin-right: auto;
+    padding-bottom: 1em;
+
+}
+
+header h1 {
+    position: absolute;
+    top: 0.4%;
+    /* bottom: 100px; */
+    left: 25%;
+    font-size: 2em;
+}
+
+header, footer {
+    background-color: rgb(33, 86, 166);
+    color: white;
+    display: block;
+    padding: 20px;
+    
+}
+
+#rangevalue {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 5px solid rgb(33, 86, 166);
+    border-radius: 6px;
+}
+
+footer {
+    text-align: center;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+input::placeholder {
+	font-size: 13px;
+}
+
+#formmessage {
+	visibility: none;
+	margin: 10px;
+	padding: 0.5rem;
+	color: red;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    /* border: rgb(28, 27, 27) solid 2px; */
+}
+    h2 {
+        text-align: center;
+        /* border: rgb(51, 51, 51) outset 1px; */
+    }
+    
+    header {
+        padding-bottom: 0.5%;
+        /* padding-top: 5% ; */
+        
+    }
+    
+    header h1, main h2, .card h3 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    nav a, ol li, footer p, .card p {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    
+    li {
+        text-align: left;
+    }
+    
+    nav a:hover {
+        text-decoration: overline;
+    }
+    
+    #menu {
+    
+        font-size: 24px;
+        color: #000;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+    
+    #menu::before {
+        content: "☰";
+    }
+    
+    #menu.open::before {
+        content: "✕";
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        color: white;
+    }
+    
+    .navigation a {
+        display: none;
+        padding: 16px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .navigation a:hover {
+        background-color: whitesmoke;
+        color: black;
+        font-size: 16px;
+    
+    
+    }
+    
+    .open a {
+        display: block;
+    }
+    
+    iframe {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+    #menu.open iframe {
+        display: none;
+    }
+    
+    .hero img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+    .hero h2 {
+        position: absolute;
+        z-index: 1;
+        font-size: 30px;
+        left: 40px;
+        top: 150px;
+        background-color: whitesmoke;
+        padding: 5px;
+    }
+
