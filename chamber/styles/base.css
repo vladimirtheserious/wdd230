@@ -2,7 +2,7 @@
 
 
 :root {
-    --font-size: 1.5rem;
+    --font-size: 1.3rem;
     --primary-color: rgb(33, 86, 166);
     --second-color: red;
 }
@@ -32,7 +32,6 @@ main section {
 
 header, footer {
     background-color: rgb(33, 86, 166);
-    font-family: 'Roboto', 'Times New Roman', Times, serif;
     color: white;
 }
 
@@ -144,16 +143,18 @@ footer p {
     display: block;
     text-align: center;
     padding: 20px;
+    font-size: var(--font-size);
 }
 
-main {
+main, footer, header {
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
 }
 
 section h2, section h1 {
     padding: 0 5px;
     background-color: rgb(72, 128, 212);
-    color: white;
+    color: #151515;
+
 
 }
 
@@ -270,14 +271,14 @@ input:required:valid {
 }
 
 span {
-    background-color: #2196F3;
+    background-color: var(--primary-color);
     color: white;
     padding: 10px; 
 
 
 }
 
-main label {
+main label, section {
     display: block;
     padding-top: 30px;
     color: black;
@@ -287,4 +288,14 @@ main label {
 
 .form {
     margin: 0px 125px ;
+}
+
+.thanks {
+    display: block;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
 }

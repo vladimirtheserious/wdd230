@@ -39,6 +39,11 @@ main label {
 
 }
 
+.memberships {
+    background-color: black;
+}
+
+
 .wf1 input:required {
     border-bottom: solid 8px var(--primary-color);
 }
@@ -60,6 +65,7 @@ body {
     padding-bottom: 1em;
 
 }
+
 
 header h1 {
     position: absolute;
@@ -129,10 +135,12 @@ nav a {
     
     header h1, main h2, .card h3 {
         font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
     }
     
     nav a, ol li, footer p, .card p {
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        font-size: var(--font-size);
+        font-family: Arial, Helvetica, sans-serif;
     }
     
     li {

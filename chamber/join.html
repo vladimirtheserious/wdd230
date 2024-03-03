@@ -38,67 +38,67 @@
             
     </header>
     <main>
-        <div class="form">
-        <section>
-            <form method="get" action="thankyou.html" class=""></form>
-            <label>First name* <input type="text" id="fname" name="fname" placeholder="" required></label>
-            <label>Last name* <input type="text" id="lname" name="lname" placeholder="" required></label>
-            <label>Title or position* <input type="text" id="title" name="title" placeholder="Use letters, hyphens, and spaces (minimum 7 characters)" required pattern="[a-zA-Z -]{7,}"></label>
-            <label>Email adress <input type="email" required id="title" name="eadress" itemid="eadress" placeholder="example@gmail.com" required pattern="[a-zA-Z -]{7,}"></label>
-            <label>Mobile phone number <input type="tel" required name="phone" id="phone"></label>
-            <label>Business/organization's name <input type="text" required name="bname" id="bname"></label>
-            <div>Membership level</div>
-            <label class="radio"><input type="radio" name="membership" value="np"> NP Membership</label>
-            <label class="radio"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-            <label class="radio"><input type="radio" name="membership" value="silver"> Silver Membership</label>
-            <label class="radio"><input type="radio" name="membership" value="gold"> Gold Membership</label>
-            <label class="top">Business/organization's description<textarea id="description" name="description"></textarea></label>
-            <input type="hidden" value="" name="datetime" id="datetime">
-            <button type="submit" class="submitBtn">Join the Chamber</button>   
-        </section>
+        <div id="form">
+            <section class="label">
+                <form method="get" action="thankyou.html" class=""></form>
+                <label>First name* <input type="text" id="fname" name="fname" placeholder="" required></label>
+                <label>Last name* <input type="text" id="lname" name="lname" placeholder="" required></label>
+                <label>Title or position* <input type="text" id="title" name="title" placeholder="Use letters, hyphens, and spaces (minimum 7 characters)" required pattern="[a-zA-Z -]{7,}"></label>
+                <label>Email adress <input type="email" required id="title" name="eadress" itemid="eadress" placeholder="example@gmail.com" required pattern="[a-zA-Z -]{7,}"></label>
+                <label>Mobile phone number <input type="tel" required name="phone" id="phone"></label>
+                <label>Business/organization's name <input type="text" required name="bname" id="bname"></label>
+                <label class="member">Membership level</label>
+                <label class="radio"><input type="radio" name="membership" value="np"> NP Membership</label>
+                <label class="radio"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                <label class="radio"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                <label class="radio"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                <label class="top">Business/organization's description<textarea id="description" name="description"></textarea></label>
+                <input type="hidden" value="" name="datetime" id="datetime">
+                <button type="submit" class="submitBtn">Join the Chamber</button>   
+            </section>
 
-        <section class="memberships">
-            <h2>Membership levels</h2>
-            <div class="benefits-container">
-                <div class="memberships-card">
-                    <h3>NP Membership</h3>
-                    <ul>
-                        <li>Ideal for non-profit organizations</li>
-                        <li>No membership fee</li>
-                        <li>Access to community resources</li>
-                    </ul>
-                    <p class="price">Free</p>
+            <section class="memberships">
+                <h2>Membership levels</h2>
+                <div class="benefits-container">
+                    <div class="memberships-card">
+                        <h3>NP Membership</h3>
+                        <ul>
+                            <li>Ideal for non-profit organizations</li>
+                            <li>No membership fee</li>
+                            <li>Access to community resources</li>
+                        </ul>
+                        <p class="price">Free</p>
+                    </div>
+                    <div class="memberships-card">
+                        <h3>Bronze Membership</h3>
+                        <ul>
+                            <li>Affordable membership fee</li>
+                            <li>10% event discounts</li>
+                            <li>Networking opportunities</li>
+                        </ul>
+                        <p class="price">$50/year</p>
+                    </div>
+                    <div class="memberships-card">
+                        <h3>Silver Membership</h3>
+                        <ul>
+                            <li>Enhanced event discounts (15%)</li>
+                            <li>Featured advertising slots</li>
+                            <li>Exclusive training sessions</li>
+                        </ul>
+                        <p class="price">$100/year</p>
+                    </div>
+                    <div class="memberships-card">
+                        <h3>Gold Membership</h3>
+                        <ul>
+                            <li>Premium event discounts (20%)</li>
+                            <li>Prime advertising placement</li>
+                            <li>VIP access to special events</li>
+                        </ul>
+                        <p class="price">$200/year</p>
+                    </div>
                 </div>
-                <div class="memberships-card">
-                    <h3>Bronze Membership</h3>
-                    <ul>
-                        <li>Affordable membership fee</li>
-                        <li>10% event discounts</li>
-                        <li>Networking opportunities</li>
-                    </ul>
-                    <p class="price">$50/year</p>
-                </div>
-                <div class="memberships-card">
-                    <h3>Silver Membership</h3>
-                    <ul>
-                        <li>Enhanced event discounts (15%)</li>
-                        <li>Featured advertising slots</li>
-                        <li>Exclusive training sessions</li>
-                    </ul>
-                    <p class="price">$100/year</p>
-                </div>
-                <div class="memberships-card">
-                    <h3>Gold Membership</h3>
-                    <ul>
-                        <li>Premium event discounts (20%)</li>
-                        <li>Prime advertising placement</li>
-                        <li>VIP access to special events</li>
-                    </ul>
-                    <p class="price">$200/year</p>
-                </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
     </main>
     <footer>
         <p>
