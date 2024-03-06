@@ -1,0 +1,18 @@
+{"theFamilyName" : "Sychugov",
+"dataFamilyMoved" : 29,
+"numberOfPeople" : 7,
+"visitedByBishop" : true,
+"individualFamilyMembers" : [
+    {
+        "name" : "Anastasiia Shakh",
+        "gender" : "Female",
+        "birthdate" : "30-08-1996"
+    },
+    {
+        "name" : "Vladimir Sychugov",
+        "gender" : "Male",
+        "birthdate" : "29-05-1999"
+    }
+]
+
+}
