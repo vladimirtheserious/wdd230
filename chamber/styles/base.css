@@ -5,6 +5,8 @@
     --font-size: 1.3rem;
     --primary-color: rgb(33, 86, 166);
     --second-color: red;
+
+
 }
 
 
@@ -72,11 +74,12 @@ header h1 {
 nav a {
     display: block;
     text-align: center;
-    background-color: rgb(72, 128, 212);
+    background-color: var(--primary-color);
     padding: 20px;
     font-size: 20px;
     text-decoration: none;
     color: white;
+    border-top: 1px solid white;
     /* border: rgb(28, 27, 27) solid 2px; */
     
 }
@@ -199,13 +202,13 @@ section h2, section h1 {
     transition: .4s;
 }
 
-input:checked + .slider {
+/* input:checked + .slider {
     background-color: #2196F3;
   }
   
   input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
-  }
+  } */
   
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
@@ -299,3 +302,101 @@ main label, section {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
 }
+
+/* Directory */
+.subpage-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-bottom: 2px solid var(--accent2-color);
+    font-size: 1.5em;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+a {
+    
+    padding: 3px;
+    background-color: white;
+    color: black
+}
+
+.directory-btn {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.directory-btn button {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 10px 13px;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1.5rem;
+}
+
+.directory-btn button:hover {
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-gap: 20px;
+	align-items: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.grid section h3 {
+    display: none;
+}
+
+.grid section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    padding: 2rem;
+    height: 250px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.grid section p,
+.grid section a {
+    margin: 10px 0;
+}
+
+.member-card img {
+    max-width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+    margin-top: 30px;
+}
+
+.list section {
+	display: block;
+    padding: 30px;
+    align-items: center;
+}
+
+.list section img {
+	display: none;
+}
+
+.list section:nth-child(odd) {
+	background-color: var(--primary-color);
+    color: white;
+}
+

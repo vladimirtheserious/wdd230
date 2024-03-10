@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vlad Sychugov - WDD 230 - Chamber of Commerce</title>
-    <meta name="author" content="Vladimir Sychugov">
+    <meta name="author" content="Vladimir Sychugov" />
     <meta name="description" content="Web-page for personal Chember project">
     <meta property = "og:title" content="Chember personal's project web-page">
     <meta property = "og:type" content="website">
@@ -37,54 +37,13 @@
         </nav>
             
     </header>
-    <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/small.webp" media="(max-width: 768px)">
-                <source srcset="images/medium.webp" media="(max-width: 1224px)">
-                <img src="images/large.webp" alt="thingi" width="1280" height="388">
-            </picture>
+    <main class="directory">
+        <h1 class="subpage-heading">Bussiness Directory</h1>
+        <div class="directory-btn">
+            <button id="grid">⏹️Grid<i class="fa fa-th-large"></i></button>
+            <button id="list">📄List<i class="fa fa-bars"></i></button>
         </div>
-        <!-- <img src="images/bilston-chamber-main-picture.jpg" alt="" class="hero-image"> -->
-        <button id="join">Join the Chamber</button>
-        
-        <section id="events">
-            <h2>Events</h2>
-            <h3>Ribbon Cutting</h3>
-            <p>Join us for the grand
-                opening of The Diamond
-                Shack, Thursday at 1:00pm
-            </p>
-        </section>
-        <section id="weather">
-            <h2>Weather</h2>
-            <p class="temp">57</p>
-            <p class="wSpeed">15</p>
-           <span class="weather"></span>
-        </section>
-        <section id="spotlights">
-            <div class="firts">
-                <h2>Build A Treefort</h2>
-                <p>We get it there for you!</p>
-                <p>hello@thankfultransport.com</p>
-                <p>+4498986789</p>
-                <p>Website</p>
-
-                </div>
-            <div class="second">
-                <h2>Code Primera</h2>
-                <p>After school coding!</p>
-                <p>contract@codeprimera.com</p>
-                <p>+4467875432</p>
-            </div>
-            <div class="third">
-                <h2>Thankful Transport</h2>
-                <p>After school coding!</p>
-                <p>contract@codeprimera.com</p>
-                <p>+4467875432</p>
-                </div>
-        </section>
-        
+        <div id="directory-grid" class="grid"></div>
     </main>
     <footer>
         <p>
@@ -94,5 +53,6 @@
     </footer>
 <script src="scripts/script.js"></script> 
 <script src="scripts/windchill.js"></script> 
+<script src="scripts/directory.js"></script>
 </body>
 </html>
