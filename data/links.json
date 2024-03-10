@@ -4,15 +4,108 @@
         "lesson": "01",
         "links":[
             {
-                "url": "lesson01/media-query.html",
-                "title": "Media Queries"
+                "url": "lesson01/holygrail.html",
+                "title": "Holy Layout"
             }
         ]
     
     },
     {
         "lesson": "02",
+        "links" :[
+            {
+                "url": "design-principles.html",
+                "title": "Design Principles"
+            },
+            {
+                "url": "design.html",
+                "title": "Design Practise"
+            }
+        ]
+    },
+    {
+        "lesson": "03",
+        "links": [
+            {
+                "url": "chamber-site-plan.html",
+                "title": "Chamber Site Plan"
+            }
+        ]
+    },
+    {
+        "lesson": "04",
+        "links": [
+            {
+                "url": "../chamber/index.html",
+                "title": "Chamber site"
+            }
+        ]
+
+    },
+    {
+        "lesson": "05",
+        "links": [
+            {
+                "url": "bom.html",
+                "title": "Book of Mormon Application"
+            }
+        ]
+    },
+    {
+        "lesson": "06",
+        "links": [
+            {
+                "url": "responsive-images.html",
+                "title": "Responsive Images"
+            }
+        ]
+    },
+    {
+        "lesson": "07",
+        "links": [
+            {
+                "url": "lazyload.html",
+                "titile": "Lazy Load Application"
+            },
+            {
+                "url": "BOM/index.html",
+                "title": "Favorite Chapter Page"
+            }
+        ]
+    },
+    {
+        "lesson": "08",
+        "links":[
+            {
+                "url": "tablebuild.html",
+                "title": "Table Application"
+            },
+            {
+                "url": "Form-start/index.html",
+                "title": "Designing Web Forms"
+            },
+            {
+                "url": "Form-start/thanks.html",
+                "title":"Designing Web Forms Thanks Page"
+            }
+            
+        ]
+    },
+    {
+        "lesson": "09",
+        "links": [
+            {
+                "url": "new-ward-members.json",
+                "titile": "JSON Application"
+            },
+            {
+                "url": "prophets.html",
+                "title": "Prophets Application"
+            }
+        
+        ]
     }
+    
 ]
 
 
