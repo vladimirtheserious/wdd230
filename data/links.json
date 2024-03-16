@@ -104,6 +104,15 @@
             }
         
         ]
+    },
+    {
+        "lesson": "10",
+        "links": [
+            {
+                "url": "weather.html",
+                "titile": "OpenWeatherMap.org API Test"
+            }
+        ]
     }
     
 ]
