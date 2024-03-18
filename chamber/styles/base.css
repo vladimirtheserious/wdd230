@@ -400,3 +400,32 @@ a {
     color: white;
 }
 
+#banner {
+    position: relative;
+    background-color: var(--secondary-color);
+    margin: 20px;
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    
+}
+
+#banner span {
+    text-decoration: underline;
+}
+
+#banner-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#banner p{
+    color: white;
+}

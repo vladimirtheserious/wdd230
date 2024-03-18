@@ -34,19 +34,23 @@
             <a href="https://vladimirtheserious.github.io/wdd230/chamber/discover.html">Discovery</a>
             <a href="https://vladimirtheserious.github.io/wdd230/chamber/directory.html">Directory</a>
             <a href="">Join</a>
-        </nav>
-            
+        </nav>    
     </header>
+    <div id="banner" class="hidden">
+        <p>Join us at the Chamber of Commerce meet and greet on Wednesday at 7:00 PM! <span>More info</span></p>
+        <a id="banner-btn" href="#">❌</a>
+    </div>
+    <div class="hero">
+        <picture>
+            <source srcset="images/small.webp" media="(max-width: 768px)">
+            <source srcset="images/medium.webp" media="(max-width: 1224px)">
+            <img src="images/large.webp" alt="thingi" width="1280" height="388">
+        </picture>
+    </div>
+    <!-- <img src="images/bilston-chamber-main-picture.jpg" alt="" class="hero-image"> -->
+    <button id="join">Join the Chamber</button>
     <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/small.webp" media="(max-width: 768px)">
-                <source srcset="images/medium.webp" media="(max-width: 1224px)">
-                <img src="images/large.webp" alt="thingi" width="1280" height="388">
-            </picture>
-        </div>
-        <!-- <img src="images/bilston-chamber-main-picture.jpg" alt="" class="hero-image"> -->
-        <button id="join">Join the Chamber</button>
+        
         
         <section id="events">
             <h2>Events</h2>
@@ -58,9 +62,7 @@
         </section>
         <section id="weather">
             <h2>Weather</h2>
-            <p class="temp">57</p>
-            <p class="wSpeed">15</p>
-           <span class="weather"></span>
+           <div id="forecast"></div>
         </section>
         <section id="spotlights">
             <div class="firts">
@@ -93,6 +95,7 @@
         <p id="lastModified"></p>
     </footer>
 <script src="scripts/script.js"></script> 
-<script src="scripts/windchill.js"></script> 
+<script src="scripts/weather.js"></script>
+<script src="scripts/banner.js"></script>
 </body>
 </html>
