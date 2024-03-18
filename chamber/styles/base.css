@@ -57,7 +57,7 @@ header, footer {
     left: 120px;
     padding: 20px;
     border-radius: 20px;
-    background-color: rgb(72, 128, 212);
+    background-color: var(--primary-color);
     color: white;
 
 
