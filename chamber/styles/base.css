@@ -10,9 +10,6 @@
 }
 
 
-* body {
-    margin: 0;
-}
 
 section h1 {
     text-align: left;
@@ -25,16 +22,22 @@ section {
     
 }
 
-main section {
+.home-grid {
     display: grid;
     grid-template-columns: 1fr;
-    
+    gap: 20px;
 }
 
 
 header, footer {
     background-color: rgb(33, 86, 166);
     color: white;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+main {
+    font-size: 12px;
 }
 
 .main-photo {
@@ -43,6 +46,7 @@ header, footer {
     margin-right: auto;
     padding-bottom: 1em;
     padding-top: 1em;
+    padding-left: 20px;
 
 }
 
@@ -51,16 +55,17 @@ header, footer {
     margin: 0 auto;
 }
 
-#join {
-    position: relative;
-    bottom: 250px;
-    left: 120px;
-    padding: 20px;
-    border-radius: 20px;
+.join {
     background-color: var(--primary-color);
-    color: white;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
 
-
+.join-title {
+    display: none;
 }
 
 header h1 {
@@ -146,23 +151,47 @@ footer p {
     display: block;
     text-align: center;
     padding: 20px;
-    font-size: var(--font-size);
 }
 
 main, footer, header {
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
 }
 
-section h2, section h1 {
-    padding: 0 5px;
-    background-color: rgb(72, 128, 212);
-    color: #151515;
-
-
+section h1, h2, h3, p  {
+    padding: 0 20px;
 }
+
+.first {
+    color: black;
+    padding: 20px;
+    margin: 25px 20px;
+    border-radius: 5px;
+}
+
+#weather-icon {
+    padding-left: 20px;
+}
+
+
 
 .firts, .second, .third {
     margin: 5px 0;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    margin-top: 20px;
+}
+
+#hero-msg {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    transition: opacity 0.5s ease;
 }
 
 .switch {
@@ -274,20 +303,17 @@ input:required:valid {
 }
 
 span {
-    background-color: var(--primary-color);
     color: white;
     padding: 10px; 
-
-
 }
 
-main label, section {
+/* main label, section {
     display: block;
     padding-top: 30px;
     color: black;
     font-size: var(--font-size);
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 .form {
     margin: 0px 125px ;
@@ -406,6 +432,8 @@ a {
     margin: 20px;
     padding: 10px 30px;
     background-color: var(--primary-color);
+    border-radius: 5px;
+
     
 }
 
@@ -428,4 +456,24 @@ a {
 
 #banner p{
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#weather, #spotlights, #events {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+}
+
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: .5rem;
+    padding: 10px;
+}
+
+.first {
+    background-color: white;
 }

@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <img class="main-photo" src="../images/mainphoto.webp" alt="">
+        <img class="main-photo" src="images/bilston-coat-of-arms.webp" alt="">
         <h1>Bilston Chamber of Commerce</h1>
         <label class="switch">
             <input type="checkbox" id="myCheck" onclick="myFunction()">
@@ -41,17 +41,22 @@
         <a id="banner-btn" href="#">❌</a>
     </div>
     <div class="hero">
-        <picture>
-            <source srcset="images/small.webp" media="(max-width: 768px)">
-            <source srcset="images/medium.webp" media="(max-width: 1224px)">
-            <img src="images/large.webp" alt="thingi" width="1280" height="388">
-        </picture>
+        <div id="hero-box">
+            <picture>
+                <source srcset="images/small.webp" media="(max-width: 768px)">
+                <source srcset="images/medium.webp" media="(max-width: 1224px)">
+                <img src="images/large.webp" alt="thingi" width="1280" height="388">
+            </picture>
+        </div>
+            <section id="hero-msg">
+                <h1 class="join-title">Join our community</h1>
+                <a class="join" href="">Join the Chamber</a>
+            </section>
     </div>
     <!-- <img src="images/bilston-chamber-main-picture.jpg" alt="" class="hero-image"> -->
-    <button id="join">Join the Chamber</button>
-    <main>
-        
-        
+    
+
+    <main class="home-grid">    
         <section id="events">
             <h2>Events</h2>
             <h3>Ribbon Cutting</h3>
@@ -65,26 +70,27 @@
            <div id="forecast"></div>
         </section>
         <section id="spotlights">
-            <div class="firts">
-                <h2>Build A Treefort</h2>
+            <h2>Spotlights</h2>
+
+            <div class="first">
+                <h3>Build A Treefort</h3>
                 <p>We get it there for you!</p>
                 <p>hello@thankfultransport.com</p>
                 <p>+4498986789</p>
                 <p>Website</p>
-
-                </div>
-            <div class="second">
-                <h2>Code Primera</h2>
+            </div>
+            <div class="first">
+                <h3>Code Primera</h3>
                 <p>After school coding!</p>
                 <p>contract@codeprimera.com</p>
                 <p>+4467875432</p>
             </div>
-            <div class="third">
-                <h2>Thankful Transport</h2>
+            <div class="first">
+                <h3>Thankful Transport</h3>
                 <p>After school coding!</p>
                 <p>contract@codeprimera.com</p>
                 <p>+4467875432</p>
-                </div>
+            </div>
         </section>
         
     </main>
