@@ -456,6 +456,11 @@ a {
     color: white;
 }
 
+.list a:nth-child(even) {
+	background-color: var(--primary-color);
+    color: black;
+}
+
 #banner {
     position: relative;
     background-color: var(--secondary-color);
@@ -753,4 +758,10 @@ body.dark {
 
 .dark .list section a:nth-child(odd){
     color: white;
+}
+
+.dark a{
+        padding: 28px;
+        /* background-color: white; */
+        color: white;
 }
