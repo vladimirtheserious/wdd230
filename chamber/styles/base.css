@@ -742,6 +742,8 @@ body.dark {
     background-color: rgb(81, 81, 81);
 }
 
-.dark a{
-    background-color: ;
+
+
+.dark .list section a:nth-child(odd){
+    color: white;
 }
