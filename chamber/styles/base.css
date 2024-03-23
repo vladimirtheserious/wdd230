@@ -49,10 +49,29 @@ main {
 
 }
 
-.hero-image {
+#hero-box picture {
+    width: 100%;
+}
+
+/* .hero-image {
     width: 100%;
     margin: 0 auto;
+} */
+
+#hero-box img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
 }
+
+#hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    margin-top: 20px;
+}
+
 
 .join {
     background-color: var(--primary-color);
@@ -61,6 +80,11 @@ main {
     font-size: 1rem;
     padding: 15px 30px;
     border-radius: 5px;
+}
+
+.join:hover {
+    background-color: green;
+    color: white;
 }
 
 .join-title {
@@ -251,10 +275,11 @@ section h1, h2, h3, p  {
     border-radius: 50%;
     }
 
-.hero img {
+/* .hero img {
     width: 100%;
     height: auto;
-}
+    border-radius: var(--radius);
+} */
 
 .container {
     display: grid;
