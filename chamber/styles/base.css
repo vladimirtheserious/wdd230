@@ -638,6 +638,7 @@ body.dark {
 
 .dark nav a {
     background-color: rgb(81, 81, 81);
+    padding: 15px;
 }
 
 .dark #banner {
@@ -762,10 +763,4 @@ body.dark {
 
 .dark .list section a:nth-child(odd){
     color: white;
-}
-
-.dark a{
-        padding: 11px;
-        /* background-color: white; */
-        color: white;
 }
