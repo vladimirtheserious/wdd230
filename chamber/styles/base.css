@@ -113,7 +113,6 @@ nav a:hover {
 .navigation {
     display: flex;
     flex-direction: column;
-    background-color: #333;
     color: white;
 }
 
@@ -323,8 +322,8 @@ input:required:valid {
     background-color: var(--primary-color);
     color: white;
     margin: 50px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
+    border-radius: var(--radius);
 }
 
 /* Directory */
@@ -492,7 +491,8 @@ a {
     background-color: var(--primary-color);
     color: white;
     padding: 10px;
-    margin-right: 20px; 
+    margin-right: 50px; 
+    margin-left: 50px;
     border-radius: 5px;
 }
 
@@ -532,6 +532,7 @@ form {
 
 .radio {
     display: block;
+    margin: 10px;
 }
 
 .memberships-card {
@@ -553,3 +554,21 @@ form {
     width: 20%;
     text-align: center;
 }
+
+form .submitBtn {
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1rem 1.5rem;
+    margin: 2rem auto;
+}
+
+form .submitBtn:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+

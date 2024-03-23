@@ -133,10 +133,15 @@
     #form {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        gap: 2.5rem;
+        gap: 7.5rem;
     }
 
    .price {
     width: 13%;
+   }
+
+   .main-img h2 {
+    margin-right: 111px; 
+    margin-left: 111px;
    }
 } 

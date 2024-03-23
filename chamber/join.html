@@ -11,7 +11,7 @@
     <meta property = "og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/c4/Bilston_Road%2C_Wolverhampton_-_geograph.org.uk_-_39387.jpg">
     <meta property = "og:url" content="https://vladimirtheserious.github.io/wdd230/">
 
-    <link rel="favicon" href="../favicon.ico">
+    <link rel="favicon" href="images/favicon.ico">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-         <img class="main-photo" src="images/bilston-coat-of-arms.webp" alt="">
+        <img class="main-photo" src="images/bilston-coat-of-arms.webp" alt="">
         <h1>Bilston Chamber of Commerce</h1>
         <label class="switch">
             <input type="checkbox" id="myCheck" onclick="myFunction()">
@@ -40,21 +40,22 @@
     <main>
         <div id="form">
             <section class="label">
-                <form method="get" action="thankyou.html" class=""></form>
-                <label>First name* <input type="text" id="fname" name="fname" placeholder="" required></label>
-                <label>Last name* <input type="text" id="lname" name="lname" placeholder="" required></label>
-                <label>Title or position* <input type="text" id="title" name="title" placeholder="Use letters, hyphens, and spaces (minimum 7 characters)" required pattern="[a-zA-Z -]{7,}"></label>
-                <label>Email adress <input type="email" required name="eadress" id="email" placeholder="example@gmail.com" pattern="[a-zA-Z -]{7,}"></label>
-                <label>Mobile phone number <input type="tel" required name="phone" id="phone"></label>
-                <label>Business/organization's name <input type="text" required name="bname" id="bname"></label>
-                <div class="member">Membership level</div>
-                <label class="radio"><input type="radio" name="membership" value="np"> NP Membership</label>
-                <label class="radio"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-                <label class="radio"><input type="radio" name="membership" value="silver"> Silver Membership</label>
-                <label class="radio"><input type="radio" name="membership" value="gold"> Gold Membership</label>
-                <label class="top">Business/organization's description<textarea id="description" name="description"></textarea></label>
-                <input type="hidden" value="" name="datetime" id="datetime">
-                <button type="submit" class="submitBtn">Join the Chamber</button>   
+                <form method="get" action="thankyou.html" class="">
+                    <label>First name* <input type="text" id="fname" name="fname" placeholder="" required></label>
+                    <label>Last name* <input type="text" id="lname" name="lname" placeholder="" required></label>
+                    <label>Title or position* <input type="text" id="title" name="title" placeholder="Use letters, hyphens, and spaces (minimum 7 characters)" required pattern="[a-zA-Z -]{7,}"></label>
+                    <label>Email adress <input type="email" required name="eadress" id="email" placeholder="example@gmail.com" pattern="[a-zA-Z -]{7,}"></label>
+                    <label>Mobile phone number <input type="tel" required name="phone" id="phone"></label>
+                    <label>Business/organization's name <input type="text" required name="bname" id="bname"></label>
+                    <div class="member">Membership level</div>
+                    <label class="radio"><input type="radio" name="membership" value="np"> NP Membership</label>
+                    <label class="radio"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                    <label class="radio"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label class="radio"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                    <label class="top">Business/organization's description<textarea id="description" name="description"></textarea></label>
+                    <input type="hidden" value="" name="datetime" id="datetime">
+                    <button type="submit" class="submitBtn">Join the Chamber</button>   
+                </form>
             </section>
 
             <section class="memberships">
@@ -107,6 +108,5 @@
         <p id="lastModified"></p>
     </footer>
 <script src="scripts/script.js"></script> 
-<script src="scripts/windchill.js"></script> 
 </body>
 </html>
