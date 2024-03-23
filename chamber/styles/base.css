@@ -6,6 +6,13 @@
     --primary-color: rgb(33, 86, 166);
     --second-color: red;
     --radius: 5px;
+
+    --primary-color-dark: #363b30;
+    --secondary-color-dark: #2e2f2c;
+    --accent1-color-dark: #1d2019;
+    --accent2-color-dark: #fff;
+    --accent3-color-dark: #c8cdbf;
+    --accent4-color-dark: #444f38;
 }
 
 
@@ -597,3 +604,136 @@ form .submitBtn:hover {
     cursor: pointer;
 }
 
+
+/* dark mode */
+
+body.dark {
+    background-color: var(--accent1-color-dark);
+    color: var(--accent2-color-dark);
+}
+
+.dark nav a:hover {
+    background-color: var(--accent4-color-dark);
+}
+
+.dark .navigation.open nav {
+    background-color: rgba(54, 59, 48, 0.9);
+}
+
+.dark nav a {
+    background-color: rgb(81, 81, 81);
+}
+
+.dark #banner {
+    background-color: var(--secondary-color-dark);
+}
+
+.dark #banner-btn {
+    color: var(--accent2-color-dark);
+}
+
+.dark #hero {
+    box-shadow: 0px 5px 18px -4px rgba(0, 0, 0, 0.7);
+}
+
+.dark .join {
+    background-color: rgb(81, 81, 81);
+    box-shadow: 0px 5px 18px -4px rgba(0, 0, 0, 0.7);
+}
+
+.dark .join:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.dark #events,
+.dark #weather {
+    background-color: rgb(81, 81, 81);
+    box-shadow: var(--shadow-dark);
+}
+
+.dark ul {
+    color: var(--accent3-color-dark);
+}
+
+.dark #spotlights {
+    background-color: rgb(81, 81, 81);
+    box-shadow: var(--shadow-dark);
+}
+
+.dark .first {
+    background-color: var(--accent1-color-dark);
+    color: white;
+}
+
+.dark header, .dark footer {
+    background-color: rgb(81, 81, 81);
+    color: white;
+}
+
+.dark .subpage-heading {
+    background-color: rgb(81, 81, 81);
+
+
+}
+
+.dark .visits {
+    background-color: rgb(81, 81, 81);
+}
+
+.dark .ev-1{
+    background-color: rgb(81, 81, 81);
+    color: white;
+    border: 5px solid var(--primary-color-dark);
+}
+
+.dark .events h2{
+    background-color: var(--primary-color-dark);
+}
+
+.dark .main-img h2{
+    background-color: rgb(81, 81, 81);
+}
+
+.dark .directory-btn button {
+    background-color: rgb(81, 81, 81);
+}
+
+.dark .grid section{
+    background-color: rgb(81, 81, 81);
+}
+
+.dark input:required{
+    border-bottom: solid 8px rgb(81, 81, 81);
+}
+
+.dark input:required:valid {
+    border-bottom: solid 8px rgb(5, 81, 5);
+}
+
+.dark form .submitBtn{
+    background-color: rgb(81, 81, 81);
+}
+
+.dark .join:hover{
+    background-color: rgb(5, 81, 5);
+    color: white;
+}
+
+.dark form .submitBtn:hover {
+    background-color: rgb(5, 81, 5);
+    color: white;
+    cursor: pointer;
+}
+
+.dark .memberships-card{
+    background-color: rgb(81, 81, 81);
+}
+
+.dark .price{
+    background-color: var(--primary-color-dark);
+    color: white;
+}
+
+.dark .thanks{
+    background-color: rgb(81, 81, 81);
+}
