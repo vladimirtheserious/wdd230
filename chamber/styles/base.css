@@ -372,9 +372,9 @@ input:required:valid {
 
 a {
     
-    padding: 28px;
-    /* background-color: white; */
-    color: white;
+    padding: 4px;
+    background-color: white;
+    color: black;
 }
 
 .directory-btn {
@@ -456,11 +456,15 @@ a {
     color: white;
 }
 
-.list a:nth-child(even) {
+
+/* .list:nth-child(even) {
 	background-color: var(--primary-color);
     color: black;
-}
+} */
 
+/* #list section a:nth-child(even) {
+    color: rgb(184, 42, 42);
+}  */
 #banner {
     position: relative;
     background-color: var(--secondary-color);
@@ -761,7 +765,7 @@ body.dark {
 }
 
 .dark a{
-        padding: 28px;
+        padding: 11px;
         /* background-color: white; */
         color: white;
 }
