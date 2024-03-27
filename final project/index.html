@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vlad Sychugov - WDD 230 - ~Scoots~</title>
+        <meta name="author" content="Vladimir Sychugov">
+        <meta name="description" content="Web-page for Final Project ~Scoots~">
+        <meta property = "og:title" content="~Scoots~ personal's project web-page">
+        <meta property = "og:type" content="website">
+        <meta property = "og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/c4/Bilston_Road%2C_Wolverhampton_-_geograph.org.uk_-_39387.jpg">
+        <meta property = "og:url" content="https://vladimirtheserious.github.io/wdd230/">
+    
+        <link rel="favicon" href="images/vladimir.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+    </head>
+<body>
+    <header>
+        <img class="logo" src="images/logo-black.png" alt="logo">
+        <!-- <h1 class="brand-name">~Scoots~</h1> -->
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="">Home</a>
+            <a href="">Rentals</a>
+            <a href="">Reservations</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <div id="banner" class="hidden">
+        <p>Try to use our scooters! You won't regret! <span>More info</span></p>
+        <a id="banner-btn" href="#">❌</a>
+    </div>
+    <div class="info-1">
+        <div id="main-photo">
+            <picture>
+                <source srcset="images/mainPhoto-small.webp" media="(max-width: 768px)">
+                <source srcset="images/mainPhoto-medium.webp" media="(max-width: 1224px)">
+                <img src="images/mainPhoto.webp" alt="" width="1395" height="591">
+            </picture>
+        </div>
+        <section id="b-to-act">
+            <h1 class="act">Try to use our scooters! You won't regret!</h1>
+            <!-- <a class="join" href="">Rent</a> -->
+        </section>
+    </div>
+    <main class="home-grid">
+        <section id="rental-info">
+            <h2 class="rental-heading">Rental Information</h2>
+            <h3>Types of Rentals</h3>
+            <p>Honda Motor Scooters</p>
+            <a class="rent-now" href=""> Rent now</a></span>
+            <img class="rental-home-img" src="images/honda-scooter.jpeg" alt="">
+            <p>Side-by-Side ATVs</p>
+            <a class="rent-now" href=""> Rent now</a></span>
+            <img class="rental-home-img" src="images/atvs-picture.jpeg" alt="">
+            <p>Jeeps</span></p>
+            <a class="rent-now" href=""> Rent now</a>
+            <img class="rental-home-img" src="images/wrangler-pic.jpeg" alt="">
+        </section>
+        <section id="social">
+            <h2>Social media</h2>
+            <p>Do you want to join us on social media?<a href=""> Click here</a></p>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <div id="weather"></div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>
+            © <span class="year"></span> <br>Vladimir Sychugov<br>The United Kingdom<br>
+            
+        </p>
+        <p><a href="">Rentals</a></p>
+        <p><a href="">Reservations</a></p>
+        <p><a href="">Contanct</a></p>
+        <p><a href="">Social</a></p>
+        <!-- <img class="logo-1" src="images/logo-black.png" alt=""> -->
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
