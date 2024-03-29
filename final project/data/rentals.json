@@ -4,10 +4,10 @@
         {
         "name": "Honda Metro Scooter",
         "maxPerson" : "1",
-        "r-halfDay" : "$20",
-        "r-fullDay" : "$30",
-        "w-halfDay" : "$25",
-        "w-fullDay" : "$30",
+        "rHalfDay" : "$20",
+        "rFullDay" : "$30",
+        "wHalfDay" : "$25",
+        "wFullDay" : "$30",
         "imageName":"images/honda_metro_scooter.webp"        
         },
         {
