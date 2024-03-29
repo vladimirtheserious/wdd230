@@ -4,18 +4,10 @@
         {
         "name": "Honda Metro Scooter",
         "maxPerson" : "1",
-        "reservation" : [
-            {
-                "halfDay": "$20",
-                "fullDay" : "$30"
-            }
-        ],
-        "walkIn" : [
-            {
-                "halfDay": "$25",
-                "fullDay": "$35"
-            }
-        ],
+        "r-halfDay" : "$20",
+        "r-fullDay" : "$30",
+        "w-halfDay" : "$25",
+        "w-fullDay" : "$30",
         "imageName":"images/honda_metro_scooter.webp"        
         },
         {
