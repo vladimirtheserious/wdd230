@@ -12,8 +12,6 @@ async function getRentalData(url) {
     }
 }
 
-getRentalData(rentalUrl);
-
 const displayRentals = (rentals) => {
     rentals.forEach((rental) => {
         let card = document.createElement('section');
@@ -40,7 +38,7 @@ const displayRentals = (rentals) => {
             logo.setAttribute('width', '300');
         }
 
-        maxPerson.textContent =  `Max person :${rental.maxPerson}`;
+        maxPerson.textContent =  `Max person: ${rental.maxPerson}`;
         r_half.textContent = `Reservation Half Day: ${rental.rhalfday}`
         r_full.textContent = `Reservation Full Day: ${rental.rfullday}`
         w_half.textContent = `Walk-In Half Day: ${rental.whalf}`
