@@ -252,3 +252,152 @@ footer{
     height: 100px;
     margin-bottom: 10px;
 }
+
+.list section{
+    display: block;
+    padding: 30px;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.list section img{
+    display: none;
+}
+
+.list section:nth-child(odd){
+    background-color: rgb(0, 132, 132);
+    color: white;
+}
+
+/* reservation page */
+
+#form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+.label {
+    margin: 13px 72px;
+}
+
+section label input[type="text"], 
+section label input[type="email"], 
+section label input[type="tel"], 
+section label input[type="hidden"], 
+section label input[type="date"]
+#description {
+    display: block;
+    padding: 5px;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin: 10px 0;
+}
+
+input:required {
+    border-bottom: solid 8px rgb(0, 132, 132);
+}
+
+input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+.radio {
+    display: block;
+    margin: 10px;
+}
+
+.r-type-radio{
+    display: block;
+    background-color: rgb(0, 132, 132);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+.r-type{
+    margin-top: 20px;
+    display: block;
+    background-color: rgb(0, 132, 132);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+}
+
+.agreements{
+    background-color: rgb(0, 132, 132);
+    padding: 20px;
+    color: white;
+}
+
+form .submitBtn {
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    margin: 1rem 40px;
+}
+
+.submitBtn:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+/* contant us page */
+
+iframe{
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.contact-us{
+    background-color: rgb(0, 132, 132);
+    color: white;
+    padding: 20px;
+    margin: 11px 0;
+}
+
+.top-1{
+    background-color: rgb(0, 132, 132);
+    padding: 20px;
+    color: white;
+}
+
+#description{
+    padding: 48px;
+    height: 90px;
+    width: 79%;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.c-us-form{
+    display: block;
+    border-radius: 4px; 
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vlad Sychugov - WDD 230 - ~Scoots~</title>
+        <meta name="author" content="Vladimir Sychugov">
+        <meta name="description" content="Web-page for Final Project ~Scoots~">
+        <meta property = "og:title" content="~Scoots~ personal's project web-page">
+        <meta property = "og:type" content="website">
+        <meta property = "og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/c4/Bilston_Road%2C_Wolverhampton_-_geograph.org.uk_-_39387.jpg">
+        <meta property = "og:url" content="https://vladimirtheserious.github.io/wdd230/">
+    
+        <link rel="favicon" href="images/vladimir.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+    </head>
+<body>
+    <header>
+        <img class="logo" src="images/logo-black.png" alt="logo">
+        <!-- <h1 class="brand-name">~Scoots~</h1> -->
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="">Home</a>
+            <a href="">Rentals</a>
+            <a href="">Reservations</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <!-- <div id="banner" class="hidden">
+        <p>Try to use our scooters! You won't regret! <span>More info</span></p>
+        <p>Today the maximum temperature is <span class="max-temp"></span></p>
+        <a id="banner-btn" href="#">❌</a>
+    </div> -->
+    <div class="info-1">
+        <div id="main-photo">
+            <picture>
+                <source srcset="images/mainPhoto-small.webp" media="(max-width: 768px)">
+                <source srcset="images/mainPhoto-medium.webp" media="(max-width: 1224px)">
+                <img src="images/mainPhoto.webp" alt="" width="1395" height="591">
+            </picture>
+        </div>
+    </div>
+    <main class="contact">
+        <div class="contact-us">
+            <h2 class="c-1">~Scoots~</h2>
+            <p>Quintana Roo, Mexico, Cozumel</p>
+            <p>Email: sales@scoots.com</p>
+            <p>Number: 0767878829</p>
+            <div class="social-media">
+                <h2>Follow us on Social Media</h2>
+                <a href="https://www.facebook.com/"><img src="images/facebooklogo_icon.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="images/instagramlogo_icon.png" alt=""></a>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d666651.8593696341!2d-87.16189977295241!3d20.355974956235933!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2suk!4v1712176946612!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="c-us-form">
+            <label>First name* <input type="text" id="fname" name="fname" placeholder="" required></label>
+            <label>Last name* <input type="text" id="lname" name="lname" placeholder="" required></label>
+            <h3 class="top-1">Leave your comment bellow</h3>
+            <label class="top">
+                <textarea id="description" name="description"></textarea>
+            </label>
+        </section>
+    </main>
+    <footer>
+        <p>
+            © <span class="year"></span> <br>Vladimir Sychugov<br>The United Kingdom<br>
+            
+        </p>
+        <p><a href="">Home</a></p>
+        <p><a href="">Rentals</a></p>
+        <p><a href="">Reservations</a></p>
+        <p><a href="">Contanct</a></p>
+        <p><a href="">Social</a></p>
+        <!-- <img class="logo-1" src="images/logo-black.png" alt=""> -->
+    </footer>
+    <script src="scripts/script.js"></script>
+    <!-- <script src="scripts/rental.js"></script> -->
+</body>
+</html>
