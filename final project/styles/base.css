@@ -347,6 +347,7 @@ input:required:valid {
     background-color: var(--main_color);
     padding: 20px;
     color: white;
+    margin: 0 7px;
 }
 
 form .submitBtn {
