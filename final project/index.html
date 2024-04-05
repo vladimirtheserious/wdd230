@@ -14,10 +14,11 @@
         <link rel="favicon" href="images/vladimir.ico">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/large.css">
     </head>
 <body>
     <header>
-        <img class="logo" src="images/logo-black.png" alt="logo">
+        <img class="logo" src="images/logo-black.png" alt="logo" loading="lazy">
         <!-- <h1 class="brand-name">~Scoots~</h1> -->
         <button id="menu"></button>
         <nav class="navigation">
@@ -37,7 +38,7 @@
             <picture>
                 <source srcset="images/mainPhoto-small.webp" media="(max-width: 768px)">
                 <source srcset="images/mainPhoto-medium.webp" media="(max-width: 1224px)">
-                <img src="images/mainPhoto.webp" alt="" width="1395" height="591">
+                <img src="images/mainPhoto.webp" alt="" width="1395" height="591" loading="lazy">
             </picture>
         </div>
         <section id="b-to-act">
@@ -47,23 +48,29 @@
     </div>
     <main class="home-grid">
         <section id="rental-info">
-            <h2 class="rental-heading">Rental Information</h2>
-            <h3>Types of Rentals</h3>
-            <p>Honda Motor Scooters</p>
-            <a class="rent-now" href=""> Rent now</a></span>
-            <img class="rental-home-img" src="images/honda-scooter.jpeg" alt="">
-            <p>Side-by-Side ATVs</p>
-            <a class="rent-now" href=""> Rent now</a></span>
-            <img class="rental-home-img" src="images/atvs-picture.jpeg" alt="">
-            <p>Jeeps</span></p>
-            <a class="rent-now" href=""> Rent now</a>
-            <img class="rental-home-img" src="images/wrangler-pic.jpeg" alt="">
+            <!-- <h2 class="rental-heading">Rental Information</h2> -->
+            <h3 class="t-of-ren">Types of Rentals</h3>
+            <div class="third">
+                <p>Honda Motor Scooters</p>
+                <a class="rent-now" href=""> Rent now</a>
+                <img class="rental-home-img rental-home-1" src="images/honda-scooter.jpeg" alt="" loading="lazy">
+            </div>
+            <div class="third">
+                <p>Side-by-Side ATVs</p>
+                <a class="rent-now" href=""> Rent now</a>
+                <img class="rental-home-img rental-home-2" src="images/atvs-picture.jpeg" alt="" loading="lazy">
+            </div>
+            <div class="third">
+                <p>Jeeps</p>
+                <a class="rent-now" href=""> Rent now</a>
+                <img class="rental-home-img rental-home-3" src="images/wrangler-pic.jpeg" alt="" loading="lazy">
+            </div>
         </section>
         <section id="social">
             <h2>Social media</h2>
-            <p>Do you want to join us on social media?<a href=""> Click here</a></p>
+            <p>Do you want to join us on social media?<a href="reservations.html"> Click here</a></p>
         </section>
-        <section id="weather">
+        <section id="weather-1">
             <h2>Weather</h2>
             <div id="weather"></div>
         </section>
@@ -74,10 +81,12 @@
             © <span class="year"></span> <br>Vladimir Sychugov<br>The United Kingdom<br>
             
         </p>
-        <p><a href="https://vladimirtheserious.github.io/wdd230/final%20project/index.html">Home</a></p>
-        <p><a href="https://vladimirtheserious.github.io/wdd230/final%20project/rentals.html">Rentals</a></p>
-        <p><a href="https://vladimirtheserious.github.io/wdd230/final%20project/reservations.html">Reservations</a></p>
-        <p><a href="https://vladimirtheserious.github.io/wdd230/final%20project/contact.html">Contanct</a></p>
+        <div id="f-links-large">
+            <p class="two"><a href="https://vladimirtheserious.github.io/wdd230/final%20project/index.html">Home</a></p>
+            <p class="two"><a href="https://vladimirtheserious.github.io/wdd230/final%20project/rentals.html">Rentals</a></p>
+            <p class="two"><a href="https://vladimirtheserious.github.io/wdd230/final%20project/reservations.html">Reservations</a></p>
+            <p class="two"><a href="https://vladimirtheserious.github.io/wdd230/final%20project/contact.html">Contanct</a></p>
+        </div>
         <!-- <img class="logo-1" src="images/logo-black.png" alt=""> -->
     </footer>
     <script src="scripts/script.js"></script>

@@ -1,4 +1,5 @@
 const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=20.39&lon=-86.94&units=metric&appid=cab02dad90af915e24481955fb63fad0';
+const url1 = "https://api.openweathermap.org/data/2.5/weather?lat=20.39&lon=86.94&units=imperial&appid=cab02dad90af915e24481955fb63fad0"
 const max_temp = document.querySelector('.max-temp');
 
 if (document.getElementById('weather')) {
@@ -56,28 +57,28 @@ const toUpperWords = (str) => {
 		word.slice(1)).join(' ');
 }
 
-async function apiFetch() {
-    try {
-        const response = await fetch(url);
-        if (response.ok) {
-            const data = await response.json();
-            // console.log(data);
-            displayResults(data);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
-}
+// async function apiFetch() {
+//     try {
+//         const response = await fetch(url1);
+//         if (response.ok) {
+//             const data = await response.json();
+//             console.log(data);
+//             displayResults(data);
+//         } else {
+//             throw Error(await response.text());
+//         }
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
 
-function displayResults(data) {
-    max_temp.innerHTML = `${data.main.temp_max}&deg;F`
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = `${desc}`;
-}
+// function displayResults(data) {
+//     max_temp.innerHTML = `${data.list[0].main.temp_max}&deg;F`
+//     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+//     let desc = data.weather[0].description;
+//     weatherIcon.setAttribute('src', iconsrc);
+//     weatherIcon.setAttribute('alt', desc);
+//     captionDesc.textContent = `${desc}`;
+// }
 
-apiFetch();
+// apiFetch();

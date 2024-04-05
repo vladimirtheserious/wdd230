@@ -14,10 +14,11 @@
         <link rel="favicon" href="images/vladimir.ico">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/large.css">
     </head>
 <body>
     <header>
-        <img class="logo" src="images/logo-black.png" alt="logo">
+        <img class="logo" src="images/logo-black.png" alt="logo" loading="lazy">
         <!-- <h1 class="brand-name">~Scoots~</h1> -->
         <button id="menu"></button>
         <nav class="navigation">
@@ -37,19 +38,19 @@
             <picture>
                 <source srcset="images/mainPhoto-small.webp" media="(max-width: 768px)">
                 <source srcset="images/mainPhoto-medium.webp" media="(max-width: 1224px)">
-                <img src="images/mainPhoto.webp" alt="" width="1395" height="591">
+                <img src="images/mainPhoto.webp" alt="" width="1395" height="591" loading="lazy">
             </picture>
         </div>
     </div>
     <main class="reservations">
         <div id="form">
             <section class="label">
-                <form method="get" action="">
+                <form method="get" action="thankyou.html">
                     <label>First name* <input type="text" id="fname" name="fname" placeholder="" required></label>
                     <label>Last name* <input type="text" id="lname" name="lname" placeholder="" required></label>
                     <label>Email adress <input type="email" required name="eadress" id="email" placeholder="example@gmail.com" pattern="[a-zA-Z -]{7,}"></label>
                     <label>Mobile phone number <input type="tel" required name="phone" id="phone"></label>
-                    <label class="date">Rental Date <input type="date" id="date" name="date" placeholder="" required></label>
+                    <label class="date">Rental Date <input type="date" id="date" name="date" required></label>
                     <div class="r-type">Rental Type</div>
                     <div class="r-type-radio">
                         <label class="radio"><input type="radio" name="rentaltype" value="np">Honda Metro Scooter</label>
@@ -85,10 +86,12 @@
             © <span class="year"></span> <br>Vladimir Sychugov<br>The United Kingdom<br>
             
         </p>
-        <p><a href="https://vladimirtheserious.github.io/wdd230/final%20project/index.html">Home</a></p>
-        <p><a href="https://vladimirtheserious.github.io/wdd230/final%20project/rentals.html">Rentals</a></p>
-        <p><a href="https://vladimirtheserious.github.io/wdd230/final%20project/reservations.html">Reservations</a></p>
-        <p><a href="https://vladimirtheserious.github.io/wdd230/final%20project/contact.html">Contanct</a></p>
+        <div id="f-links-large">
+            <p class="two"><a href="https://vladimirtheserious.github.io/wdd230/final%20project/index.html">Home</a></p>
+            <p class="two"><a href="https://vladimirtheserious.github.io/wdd230/final%20project/rentals.html">Rentals</a></p>
+            <p class="two"><a href="https://vladimirtheserious.github.io/wdd230/final%20project/reservations.html">Reservations</a></p>
+            <p class="two"><a href="https://vladimirtheserious.github.io/wdd230/final%20project/contact.html">Contanct</a></p>
+        </div>
         <!-- <img class="logo-1" src="images/logo-black.png" alt=""> -->
     </footer>
     <script src="scripts/script.js"></script>

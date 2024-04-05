@@ -14,10 +14,11 @@
         <link rel="favicon" href="images/vladimir.ico">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/large.css">
     </head>
 <body>
     <header>
-        <img class="logo" src="images/logo-black.png" alt="logo">
+        <img class="logo" src="images/logo-black.png" alt="logo" loading="lazy">
         <!-- <h1 class="brand-name">~Scoots~</h1> -->
         <button id="menu"></button>
         <nav class="navigation">
@@ -37,41 +38,46 @@
             <picture>
                 <source srcset="images/mainPhoto-small.webp" media="(max-width: 768px)">
                 <source srcset="images/mainPhoto-medium.webp" media="(max-width: 1224px)">
-                <img src="images/mainPhoto.webp" alt="" width="1395" height="591">
+                <img src="images/mainPhoto.webp" alt="" width="1395" height="591" loading="lazy">
             </picture>
         </div>
     </div>
     <main class="contact">
-        <div class="contact-us">
-            <h2 class="c-1">~Scoots~</h2>
-            <p>Quintana Roo, Mexico, Cozumel</p>
-            <p>Email: sales@scoots.com</p>
-            <p>Number: 0767878829</p>
-            <div class="social-media">
-                <h2>Follow us on Social Media</h2>
-                <a href="https://www.facebook.com/"><img src="images/facebooklogo_icon.png" alt=""></a>
-                <a href="https://www.instagram.com/"><img src="images/instagramlogo_icon.png" alt=""></a>
+        <div class="form">
+            <div class="contact-us">
+                <h2 class="c-1">~Scoots~</h2>
+                <p>Quintana Roo, Mexico, Cozumel</p>
+                <p>Email: sales@scoots.com</p>
+                <p>Number: 0767878829</p>
+                <div class="social-media">
+                    <h2>Follow us on Social Media</h2>
+                    <a href="https://www.facebook.com/"><img src="images/facebooklogo_icon.png" alt="" loading="lazy"></a>
+                    <a href="https://www.instagram.com/"><img src="images/instagramlogo_icon.png" alt=""loading="lazy"></a>
+                </div>
             </div>
+        
+            <section class="c-us-form">
+                <label>First name* <input type="text" id="fname" name="fname" placeholder="" required></label>
+                <label>Last name* <input type="text" id="lname" name="lname" placeholder="" required></label>
+                <h3 class="top-1">Leave your comment bellow</h3>
+                <label class="top">
+                    <textarea id="description" name="description"></textarea>
+                </label>
+            </section>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d666651.8593696341!2d-87.16189977295241!3d20.355974956235933!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2suk!4v1712176946612!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <section class="c-us-form">
-            <label>First name* <input type="text" id="fname" name="fname" placeholder="" required></label>
-            <label>Last name* <input type="text" id="lname" name="lname" placeholder="" required></label>
-            <h3 class="top-1">Leave your comment bellow</h3>
-            <label class="top">
-                <textarea id="description" name="description"></textarea>
-            </label>
-        </section>
     </main>
     <footer>
         <p>
             © <span class="year"></span> <br>Vladimir Sychugov<br>The United Kingdom<br>
             
         </p>
-        <p><a href="https://vladimirtheserious.github.io/wdd230/final%20project/index.html">Home</a></p>
-        <p><a href="https://vladimirtheserious.github.io/wdd230/final%20project/rentals.html">Rentals</a></p>
-        <p><a href="https://vladimirtheserious.github.io/wdd230/final%20project/reservations.html">Reservations</a></p>
-        <p><a href="https://vladimirtheserious.github.io/wdd230/final%20project/contact.html">Contanct</a></p>
+        <div id="f-links-large">
+            <p class="two"><a href="https://vladimirtheserious.github.io/wdd230/final%20project/index.html">Home</a></p>
+            <p class="two"><a href="https://vladimirtheserious.github.io/wdd230/final%20project/rentals.html">Rentals</a></p>
+            <p class="two"><a href="https://vladimirtheserious.github.io/wdd230/final%20project/reservations.html">Reservations</a></p>
+            <p class="two"><a href="https://vladimirtheserious.github.io/wdd230/final%20project/contact.html">Contanct</a></p>
+        </div>
         <!-- <img class="logo-1" src="images/logo-black.png" alt=""> -->
     </footer>
     <script src="scripts/script.js"></script>

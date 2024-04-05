@@ -1,9 +1,14 @@
+:root{
+    --main_color: rgb(17 68 68);
+    --main_radius: 5px;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header, footer {
-    background-color: rgb(0, 132, 132);
+    background-color: var(--main_color);
     color: white;
     padding: 10px;
 }
@@ -35,6 +40,7 @@ a{
 .open a {
     display: block;
 }
+
 
 iframe {
     display: block;
@@ -84,7 +90,7 @@ iframe {
 .act {
     display: none;
     font-size: 26px;
-    color: rgb(0, 132, 132);
+    color: var(--main_color);
     background-color: white;
     opacity: 0.8;
     padding: 10px;
@@ -93,11 +99,11 @@ iframe {
 
 .join {
     background-color: white;
-    color: rgb(0, 132, 132);
+    color: var(--main_color);
     text-decoration: none;
     font-size: 10px;
     padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: var(--main_radius);
 }
 
 #b-to-act{
@@ -121,7 +127,7 @@ iframe {
 
 #rental-info {
     text-align: center;
-    background-color: rgb(0, 132, 132);
+    background-color: var(--main_color);
     color: white;
 }
 
@@ -133,15 +139,15 @@ iframe {
 .more-info a, #social a, footer a{
     text-decoration: none;
     background-color: white;
-    color: rgb(0, 132, 132);
+    color: var(--main_color);
     margin: 0 4px;
     padding: 3px;
 }
 
-#social, #weather {
-    background-color: rgb(0, 132, 132);
+#social, #weather-1 {
+    background-color: var(--main_color);
     color: white;
-    border-radius: 5px;
+    border-radius: var(--main_radius);
     padding: 0 10px;
 }
 
@@ -161,12 +167,12 @@ footer p{
 .rent-now{
     position: relative;
     bottom: -180px;
-    background-color: rgb(0, 132, 132);
+    background-color: var(--main_color);
     color: white;
     text-decoration: none;
     font-size: 16px;
     padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: var(--main_radius);
 
 }
 
@@ -174,8 +180,8 @@ footer p{
     position: relative;
     margin: 20px;
     padding: 10px 30px;
-    background-color: rgb(0, 132, 132);
-    border-radius: 5px;
+    background-color: var(--main_color);
+    border-radius: var(--main_radius);
     /* font-family: Arial, Helvetica, sans-serif; */
 
     
@@ -190,7 +196,7 @@ footer p{
     top: 10px;
     right: 20px;
     font-size: 1.5rem;
-    color: var(--accent2-color);
+    /* color: var(--accent2-color); */
     text-decoration: none;
 }
 
@@ -214,8 +220,8 @@ footer{
     text-align: center;
     margin-bottom: 30px;
     padding: 10px;
-    border-radius: 5px;
-    background-color: rgb(0, 132, 132);
+    border-radius: var(--main_radius);
+    background-color: var(--main_color);
     color: white;
     font-size: 20px;
 }
@@ -241,9 +247,9 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 5px;
-    padding: 2rem;
-    background-color: rgb(0, 132, 132);
+    border-radius: var(--main_radius);
+    /* padding: 2rem; */
+    background-color: var(--main_color);
     color: white;
 }
 
@@ -270,7 +276,7 @@ footer{
 }
 
 .list section:nth-child(odd){
-    background-color: rgb(0, 132, 132);
+    background-color: var(--main_color);
     color: white;
 }
 
@@ -304,7 +310,7 @@ section label input[type="date"]
 }
 
 input:required {
-    border-bottom: solid 8px rgb(0, 132, 132);
+    border-bottom: solid 8px var(--main_color);
 }
 
 input:required:valid {
@@ -318,27 +324,27 @@ input:required:valid {
 
 .r-type-radio{
     display: block;
-    background-color: rgb(0, 132, 132);
+    background-color: var(--main_color);
     color: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: var(--main_radius);
     
 }
 
 .r-type{
     margin-top: 20px;
     display: block;
-    background-color: rgb(0, 132, 132);
+    background-color: var(--main_color);
     color: white;
     font-size: 20px;
     text-align: center;
     padding: 20px;
     border-bottom: 2px solid white;
-    border-radius: 5px;
+    border-radius: var(--main_radius);
 }
 
 .agreements{
-    background-color: rgb(0, 132, 132);
+    background-color: var(--main_color);
     padding: 20px;
     color: white;
 }
@@ -348,12 +354,12 @@ form .submitBtn {
     background-color: white;
     color: black;
     font-size: 1.2rem;
-    border-radius: 5px;
+    border-radius: var(--main_radius);
     padding: 1rem 1.5rem;
     margin: 1rem 40px;
 }
 
-.submitBtn:hover{
+.submitBtn:hover, .rent-now:hover{
     background-color: green;
     color: white;
     cursor: pointer;
@@ -369,14 +375,14 @@ iframe{
 }
 
 .contact-us{
-    background-color: rgb(0, 132, 132);
+    background-color: var(--main_color);
     color: white;
     padding: 20px;
     margin: 11px 0;
 }
 
 .top-1{
-    background-color: rgb(0, 132, 132);
+    background-color: var(--main_color);
     padding: 20px;
     color: white;
 }
@@ -400,4 +406,17 @@ iframe{
     width: 100%;
     max-width: 400px;
     appearance: none;
+}
+
+
+/* thankyou page */
+
+.thanks{
+    display: block;
+    padding: 20px;
+    background-color: var(--main_color);
+    color: white;
+    margin: 50px;
+    font-size: 1.5em;
+    border-radius: var(--main_radius);
 }
