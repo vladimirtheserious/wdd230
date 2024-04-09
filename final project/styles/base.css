@@ -136,7 +136,7 @@ iframe {
     padding-bottom: 15px;
 }
 
-.more-info a, #social a, footer a{
+.more-info a, #social a, footer a, .link-p{
     text-decoration: none;
     background-color: white;
     color: var(--main_color);
@@ -207,7 +207,7 @@ footer p{
 #banner p{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 footer{
